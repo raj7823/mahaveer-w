@@ -3,80 +3,204 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ultra Pro Landing</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<title>MAHAVEER WEALTH</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
+<!-- Meta Pixel Code -->
 <script>
-// fake live users
-setInterval(()=>{
-  document.getElementById("live").innerText = Math.floor(Math.random()*50)+120;
-},3000);
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-// redirect
-function go(){
-  window.location.href="https://t.me/YOUR_LINK";
-}
-
-// popup
-function showPopup(){
-  document.getElementById("popup").style.display="flex";
-}
-setTimeout(showPopup,4000);
+fbq('init', '1114607490964322');
+fbq('track', 'PageView');
 </script>
 
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1114607490964322&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+
+/* ============================= */
+/* MAIN HEADLINE */
+/* ============================= */
+
+.card h2 {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    margin: 15px 0 10px;
+    padding: 0 5px;
+
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+
+    font-size: clamp(22px, 7vw, 34px);
+    line-height: 1.2;
+    font-weight: 800;
+
+    background: linear-gradient(
+        90deg,
+        #ffd700,
+        #ffffff,
+        #00e5ff,
+        #ffd700
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-size: 250% auto;
+
+    animation: headlineGlow 3s linear infinite;
+
+    text-shadow:
+        0 0 12px rgba(255,215,0,0.35),
+        0 0 25px rgba(0,229,255,0.20);
+}
+
+@keyframes headlineGlow {
+
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 250% center;
+    }
+
+}
+
+
+/* ============================= */
+/* TOP LINE */
+/* ============================= */
+
+.live {
+    font-weight: 700;
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 8px;
+}
+
+
+/* ============================= */
+/* SUBTITLE */
+/* ============================= */
+
+.subtitle {
+    text-align: center;
+    line-height: 1.6;
+    margin: 0 auto 20px;
+}
+
+
+/* ============================= */
+/* TELEGRAM BUTTON */
+/* ============================= */
+
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+
+/* ============================= */
+/* POPUP */
+/* ============================= */
+
+.popup {
+    display: none;
+}
+
+</style>
+
 </head>
+
 <body>
 
 <div class="container">
 
-<div class="card">
+    <div class="card">
 
-<div class="live">🔥 <span id="live">150</span> People Watching</div>
+        <!-- TOP LINE -->
 
-<img src="images/profile.jpg" class="profile">
+        <div class="live">
+            📈 PREMIUM STOCK MARKET UPDATES
+        </div>
 
-<h2>💎 ALL MATKA GAMES 💎</h2>
 
-<a onclick="go()" class="btn pulse">🚀 JOIN TELEGRAM</a>
+        <!-- PROFILE -->
 
-<div class="list">
-<div>✔ KALYAN</div>
-<div>✔ MAIN RATAN</div>
-<div>✔ TIME BAZAR</div>
-<div>✔ RAJDHANI DAY/NIGHT</div>
-<div>✔ MILAN DAY/NIGHT</div>
+        <img src="images/profile.jpg" class="profile">
+
+
+        <!-- MAIN HEADLINE -->
+
+        <h2>
+            💎 MAHAVEER WEALTH 💎
+        </h2>
+
+
+        <!-- SUBTITLE -->
+
+        <p class="subtitle">
+            Get Daily Stock Market Updates, Market Analysis & Trading Insights
+        </p>
+
+
+        <!-- ONLY ONE BUTTON -->
+
+        <a
+            href="https://t.me/+QUxfG3bkIxowNmZl"
+            class="btn pulse"
+        >
+            🚀 JOIN TELEGRAM
+        </a>
+
+
+        <!-- FEATURES -->
+
+        <div class="list">
+
+            <div>✔ NIFTY 50 ANALYSIS</div>
+
+            <div>✔ BANK NIFTY UPDATES</div>
+
+            <div>✔ STOCK MARKET INSIGHTS</div>
+
+            <div>✔ INTRADAY MARKET UPDATES</div>
+
+            <div>✔ DAILY MARKET LEVELS</div>
+
+        </div>
+
+
+        <!-- BOTTOM TEXT -->
+
+        <div class="timer">
+            📊 FREE MARKET UPDATES
+        </div>
+
+    </div>
+
 </div>
-
-<div class="timer">⏳ Offer Ends In: <span id="count">60</span>s</div>
-
-<a onclick="go()" class="btn pulse">🔥 JOIN NOW</a>
-
-<div class="bottom">
-💎 FREE GAME DAILY 💎<br>
-💎 LOSS COVER GUARANTEE 💎
-</div>
-
-</div>
-
-</div>
-
-<div id="popup" class="popup">
-<div class="popup-box">
-🔥 20 People Joined Just Now!
-<br><br>
-<button onclick="go()">JOIN NOW</button>
-</div>
-</div>
-
-<script>
-// countdown
-let c=60;
-setInterval(()=>{
-  if(c>0){c--; document.getElementById("count").innerText=c;}
-},1000);
-</script>
 
 </body>
 </html>
